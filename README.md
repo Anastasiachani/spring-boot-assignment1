@@ -93,11 +93,13 @@ spring.datasource.password=changeit
 spring.data.rest.base-path=/api
 
 
-Clone Project into Eclipse:
+Clone Project into IntelliJ(στην γραμμή εργαλειών της εφαρμογής):
 
-File -> Import -> Git/Projects from Git -> Clone URI
+Git -> Clone  
 
-the project url is: https://github.com/Anastasiachani/spring-boot-assignment1
+και στο URL βάζετε:
+
+https://github.com/Anastasiachani/spring-boot-assignment1
 
 
 
