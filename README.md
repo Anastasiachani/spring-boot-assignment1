@@ -17,14 +17,23 @@ docker run --name mysqldb -v mysqldbvol:/var/lib/mysql -p 3306:3306 -e MYSQL_USE
 Στο DBeaver(https://dbeaver.io/download/), χρησιμοποιώντας MySQL, τρέχουμε τις εξής εντολές ώστε να δημιουργηθούν οι πίνακες: 
 
 CREATE TABLE IF NOT EXISTS `users` (
+
   `firstname` varchar(50) NOT NULL,
+  
   `lastname` varchar(50) NOT NULL,
+  
   `phone` varchar(15) NOT NULL,
+  
   `email` varchar(50) NOT NULL,
+  
   `department` varchar(50) NOT NULL,
+  
   `address` varchar(100),
+  
   CONSTRAINT p_key PRIMARY KEY (`email`)
+  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 
 CREATE TABLE IF NOT EXISTS `roles` (
@@ -42,7 +51,9 @@ CREATE TABLE IF NOT EXISTS `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
+
 Γεμίζουμε τους πίνακες με αυτές τις τιμές:
+
 
 INSERT INTO `users` VALUES
 
@@ -55,6 +66,7 @@ INSERT INTO `users` VALUES
 ('Mary','Public','6987103258', 'mary@hua.gr', 'Εργαζόμενος Τμήματος Παραγωγής', 'Γαννιτσών 83, Περιστέρι, ΤΚ:12136'),
 
 ('Maxwell','Dixon','6940356921','max@hua.gr', 'admin', null);
+
 
 
 INSERT INTO `roles` VALUES 
